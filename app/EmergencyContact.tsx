@@ -1,4 +1,3 @@
-// app/emergency-modal.js
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 import { useRouter } from 'expo-router';
@@ -16,8 +15,6 @@ const EmergencyContactModal=()=> {
         name : emergencyContact.name,
         phoneno: emergencyContact.phone
     }))
-    // Handle emergency contact submission logic here
-    console.log('Emergency contact submitted:', emergencyContact);
     router.back();
   };
   React.useEffect(()=> {

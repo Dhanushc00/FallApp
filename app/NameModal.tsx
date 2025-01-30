@@ -15,8 +15,6 @@ const NameModal = () => {
   },[])
 
   const handleSubmit = () => {
-    // Handle name submission logic here
-    console.log('Name submitted:', name);
     dispatch(setUserNameData(name));
     router.back();
   };

@@ -1,4 +1,3 @@
-// ALert.tsx
 import React, { useState, useEffect, useRef } from 'react';
 import { View, Text, Image, TouchableOpacity, StyleSheet, Dimensions } from 'react-native';
 import {sendSms} from '../Algorithm/sendMessage';
@@ -40,7 +39,6 @@ const Alert: React.FC = () => {
   }, []);
 
   const handleDismiss = () => {
-    console.log('Dismissed');
     const time1 = Moment().format('MMMM Do YYYY, h:mm:ss a');
           dispatch(setAlertLogData({
             id: time1.toString(),
@@ -53,7 +51,6 @@ const Alert: React.FC = () => {
   };
 
   const handleAlert = () => {
-    console.log('Alert sent');
     setCountdown(0);
   };
 

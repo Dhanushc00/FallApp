@@ -1,7 +1,6 @@
-// AlertHistoryList.tsx
 import React from 'react';
 import { View, Text, FlatList, TouchableOpacity, StyleSheet } from 'react-native';
-import { Ionicons } from '@expo/vector-icons'; // Make sure to install expo/vector-icons
+import { Ionicons } from '@expo/vector-icons';
 import {AlertItem, clearAlertLogData, RootState} from '../store/store';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -28,7 +27,6 @@ const Logs = () => {
 
   return (
     <View style={styles.mainContainer}>
-    {/* Top Bar with Dustbin */}
     <View style={styles.topBar}>
       <Text/>
       <TouchableOpacity 
@@ -52,8 +50,7 @@ const Logs = () => {
 
 const styles = StyleSheet.create({
   mainContainer: {
-    flex: 1,
-    // backgroundColor: '#F5F5F5',
+    flex: 1
   },
   container: {
     marginTop: 50,
@@ -64,11 +61,8 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingHorizontal: 16,
-    paddingTop: 50, // Adjust based on your status bar height
-    paddingBottom: 10,
-    // backgroundColor: 'white',
-    // borderBottomWidth: 1,
-    // borderBottomColor: '#E0E0E0',
+    paddingTop: 50,
+    paddingBottom: 10
   },
   title: {
     fontSize: 20,

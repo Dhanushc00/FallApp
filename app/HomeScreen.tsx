@@ -7,7 +7,6 @@ import { useRouter, Link } from 'expo-router';
 import { RootState } from '../store/store'; 
 import { setAccelerometerData, setAngleData } from '../store/store';
 import {setRouterRef} from '../Algorithm/routerRef';
-// import { Modal } from 'expo-modal';
 
 interface SensorData {
   x: number;

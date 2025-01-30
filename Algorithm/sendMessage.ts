@@ -4,7 +4,6 @@ export const sendSms = (phoneNumber: string, message: string, router: any) => {
         .then(response => {
           router.dismissAll();
           console.log('SMS sent successfully');
-          console.log(message);
           router.replace('/');
         })
         .catch(error => {

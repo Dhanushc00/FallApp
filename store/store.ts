@@ -200,4 +200,3 @@ export const {setFlagData} = flagSlice.actions;
 export const {setUserNameData} = userNameSlice.actions;
 export const {setEmergencyData} = emergencySlice.actions;
 export const {clearAlertLogData, setAlertLogData} = alertLogSlice.actions;
-// export const { setGyroscopeData } = gyroscopeSlice.actions;
